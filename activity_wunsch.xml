@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/headline1"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="IUBH Radio"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/headline2"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center|top"
+            android:text="... das Radio für´s Fernstudium"
+            android:textSize="11sp"
+            android:textStyle="italic" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="99dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textErlaeuterung"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bitte nennt uns im Folgenden die bekannten Angaben (Titel, Interpret, Album, Erscheinungsjahr), welchen Song ihr euch wünscht." />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="493dp"
+            android:layout_height="232dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textCaptionMusikwunsch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/textMusikwunsch"
+                android:text="Dein Musikwunsch:" />
+
+            <EditText
+                android:id="@+id/textMusikwunsch"
+                android:layout_width="wrap_content"
+                android:layout_height="182dp"
+                android:layout_marginTop="28dp"
+                android:ems="10"
+                android:text="NEUER MUSIKWUNSCH\nTitel: \nInterpret: \nAlbum: \nJahr: \nSonstige Angaben: "
+                android:inputType="textMultiLine" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="119dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonAbschicken"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Musikwunsch übermitteln" />
+
+            <TextView
+                android:id="@+id/textDone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:text="Dein Wunsch wurde erfolgreich übermittelt!\nDu kannst jetzt zurück zur Übersicht gehen."
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/buttonZurueck"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="zurück zur Übersicht" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
